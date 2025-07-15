@@ -3,54 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruthvik's Portfolio</title>
-    <link rel="stylesheet" href="port.css">
+    <title>Ruthvik Akkenapally - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ruthvik Akkenapally</h1>
-        <p>Aspiring Computer Science Engineer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="Passportsize.jpg" alt="Profile Picture">
-        <p>I am passionate about software development, with a strong foundation in Java, web technologies (HTML, CSS, JavaScript, React.js), and machine learning. I enjoy working on projects that involve data structures and algorithms. My interests also extend to cybersecurity, where I explore ways to enhance security using machine learning techniques. Constantly learning and adapting, I thrive on solving complex problems and building efficient, scalable applications.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Malicious URL Detection</h3>
-            <p>Using logistic regression to enhance cybersecurity...</p>
-        </div>
-        <div class="project">
-            <h3>Diabetes Prediction</h3>
-            <p>Developed a machine learning model for early diabetes detection...</p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ruthvikakkenapally@gmail.com">ruthvikakkenapally@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/akkenapally-ruthvik-a31b832b7" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/RUTHVIK111" target="_blank">GitHub Profile</a></p>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Ruthvik Akkenapally. All Rights Reserved.</p>
-    </footer>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="Passportsize.jpg" alt="Ruthvik Akkenapally" class="profile-pic">
+    <p>I am an aspiring Computer Science Engineer with a strong foundation in programming, data structures, and algorithms. I am passionate about applying my technical skills and problem-solving abilities in dynamic software development environments.</p>
+</section>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleDarkMode()" class="dark-btn">Toggle Dark Mode</button>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring Computer Science Engineer with a strong foundation in programming, data structures, and algorithms. I am passionate about applying my technical skills and problem-solving abilities in dynamic software development environments.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        <h3>Programming Languages</h3>
+        <p>Advanced: Java<br>Intermediate: C, Python</p>
+        <h3>Web Technologies</h3>
+        <p>HTML, CSS, JavaScript, React.js</p>
+        <h3>Tools & Platforms</h3>
+        <p>GitHub, Google Colab, VS Code</p>
+        <h3>Academic Knowledge</h3>
+        <p>Data Structures and Algorithms, Operating Systems, Computer Networks, OOPs</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Detection Of Malicious URLs Using Logistic Regression</h3>
+        <p>Developed a hierarchical logistic regression model to detect malicious URLs by analyzing both local and global URL characteristics. Extensively tested with diverse datasets for robust detection accuracy.</p>
+    </div>
+    <div class="card">
+        <h3>Diabetes Prediction with Smart Web App</h3>
+        <p>Built a Machine Learning model analyzing health metrics like glucose, BMI, and blood pressure for predicting diabetes risk. Integrated with a user-friendly smart web application for real-time predictions and patient management.</p>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications & Internships</h2>
+    <div class="card">
+        <h3>Infosys Springboard - Java Developer</h3>
+        <p>Completed comprehensive Java Developer certification, gaining practical experience in Java programming and OOP concepts.</p>
+    </div>
+    <div class="card">
+        <h3>Deloitte Technology Virtual Internship</h3>
+        <p>Participated in Deloitte's virtual internship, solving real-world technology challenges and gaining exposure to industry best practices.</p>
+    </div>
+    <div class="card">
+        <h3>CLA - Programming Essentials in C</h3>
+        <p>Acquired foundational knowledge of C programming language.</p>
+    </div>
+    <div class="card">
+        <h3>PCAP - Programming Essentials in Python</h3>
+        <p>Learned Python programming essentials with hands-on problem-solving exercises.</p>
+    </div>
+    <div class="card">
+        <h3>NPTEL - Soft Skills</h3>
+        <p>Completed soft skills certification to enhance professional communication and teamwork abilities.</p>
+    </div>
+    <div class="card">
+        <h3>Udemy - Complete Web Development Course</h3>
+        <p>Covered front-end and back-end web development concepts in a comprehensive Udemy course.</p>
+    </div>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+    <div class="card">
+        <h3>5th International Conference On Electronics Sustainable Communication Systems (ICESC - 2024)</h3>
+        <p>Published research on "Detection Of Malicious URLs Using Logistic Regression".</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ruthvikakkenapally@gmail.com">ruthvikakkenapally@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/akkenapally-ruthvik-a31b832b7" target="_blank">My LinkedIn</a></p>
+    <p>GitHub: <a href="https://github.com/RUTHVIK111" target="_blank">My GitHub</a></p>
+    <p>Phone: +91 8520088693</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Ruthvik Akkenapally. All rights reserved.</p>
+</footer>
+
+<button onclick="scrollToTop()" class="dark-btn" id="topBtn">↑ Top</button>
+
+<script>
+    // Smooth Scroll
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+
+    // Scroll to Top
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
 </body>
 </html>
